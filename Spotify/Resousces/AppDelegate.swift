@@ -26,7 +26,11 @@ var window: UIWindow?
         window.makeKeyAndVisible()
         self.window = window
         
-       
+        AuthManager.shared.refreshAccessTokenIfNeeded{success in
+            print(success)
+            
+        }
+        
         return true
     }
 
