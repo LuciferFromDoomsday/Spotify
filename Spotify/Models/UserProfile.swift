@@ -25,10 +25,7 @@ struct UserProfile : Codable {
     
     let product : String
     
-    let images : [UserImage]
+    let images : [APIImage]
 }
 
-struct UserImage : Codable {
-    
-    let url : String
-}
+
